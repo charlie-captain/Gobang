@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:fitsSystemWindows="true"
+    >
+
+    <include
+        android:id="@+id/ll_main_title"
+        layout="@layout/main_titlebar"/>
+
+    <Button
+        android:id="@+id/btn_main_ai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_main_title"
+        android:layout_margin="10dp"
+        android:background="@drawable/restartgame_selector"
+        android:text="人机对战"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_main_ble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_main_ai"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/restartgame_selector"
+        android:text="蓝牙对战"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eba35100">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="五子棋AI对战"
+        android:textColor="#000000"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/tv_win"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="你输了!"
+        android:visibility="invisible"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        />
+
+    <com.android.willchen.gobang.view.AiGameView
+        android:id="@+id/vw_gobang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vw_gobang"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_difficult"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/restartgame_selector"
+            android:text="难度:简单"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            />
+
+        <Button
+            android:id="@+id/btn_again"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/restartgame_selector"
+            android:text="重玩"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
