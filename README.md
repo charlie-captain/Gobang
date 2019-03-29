@@ -463,4 +463,3 @@
     - #### 最终效果图发一下吧,没图说个..
 	![这里写图片描述](http://img.blog.csdn.net/20170407153803201?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lsbGlhbWNoZXc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 	
-	- #### 项目地址: [https://github.com/703692499/Gobang]
